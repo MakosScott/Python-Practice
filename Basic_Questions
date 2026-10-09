@@ -1,0 +1,86 @@
+
+def reverse_string(s) :
+    return s[::-1]
+
+
+def is_palindrome(x) : 
+
+    if x.casefold() == x[::-1].casefold() :
+        print(True)
+
+    else: 
+        print(False)
+
+
+def FizzBuzz(num) :  # multiples of 3 prints "FIZZ". Multiples of 5 prints "BUZZ"
+
+    if num %3 == 0 and num %5 == 0:
+        print("FIZZBUZZ") 
+
+    elif num % 3 ==0 :
+        print("FIZZ")
+
+    elif num % 5 == 0:
+        print("BUZZ")
+
+
+def char_count(word):  
+    counts = {} #init empty dict 
+    for x in word.casefold() : # go through each character in the string 
+        counts[x] = counts.get(x,0)+1  #assign to the key x the previous value stored by the character incremented by 1
+    print(counts) 
+
+def find_max(nums) : #find max nunber without using max()
+    biggest = 0
+    for x in nums: 
+        if x > biggest :
+            biggest = x 
+    print(biggest)
+
+
+def remove_dups(duplist) : #removes all dups but does not change order 
+    nondupset = set() # the trick is to use a set for value checking, since checking x in set is 0(1)
+    result = [] # list to append all first instances of a value
+    for x in duplist :
+        if x in nondupset:
+            continue
+        else :
+            nondupset.add(x)
+            result.append(x)
+    return result
+
+def two_sum(list, target): # return the index of 2 numbers in list that ad up to target 
+    my_set = set(list)
+    for x in list:
+        if target - x in my_set:
+            return [list.index(x), list.index(target-x)]
+
+
+# TESTS
+#print(reverse_string("hello"))
+
+
+#is_palindrome("tarat")
+#is_palindrome("racecar")
+#is_palindrome("tuque")
+
+
+#FizzBuzz(15)
+#FizzBuzz(9)
+#FizzBuzz(21)
+#FizzBuzz(45)
+#FizzBuzz(0)
+#FizzBuzz(10)
+
+#char_count("banana")  
+#char_count("Pineapple")
+#char_count("dictionary")
+
+#print(find_max([3, 9, 2, 7]))   
+#print(find_max([2, 13, 4, 8, 22, 43, 1, 12]))  
+
+#print(remove_dups([1, 3, 1, 2, 3, 4])) 
+#print(remove_dups([2, 1, 1, 2, 3, 4, 5, 3]))
+
+
+print(two_sum([2, 7, 11, 15], 9))
