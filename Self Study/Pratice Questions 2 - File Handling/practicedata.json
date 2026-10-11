@@ -1,0 +1,73 @@
+{
+  "store": "Maple Street Books",
+  "location": {
+    "city": "Kingston",
+    "province": "ON"
+  },
+  "open": true,
+  "employees": [
+    {
+      "id": 101,
+      "name": "Jordan Lee",
+      "role": "Manager",
+      "hourly_rate": 26.5,
+      "skills": [
+        "inventory",
+        "scheduling",
+        "customer service"
+      ],
+      "supervisor": null
+    },
+    {
+      "id": 100,
+      "name": "Priya Nair",
+      "role": "Cashier",
+      "hourly_rate": 18.75,
+      "skills": [
+        "customer service"
+      ],
+      "supervisor": 101
+    },
+    {
+      "id": 103,
+      "name": "Marcus Chen",
+      "role": "Stock Clerk",
+      "hourly_rate": 17.5,
+      "skills": [
+        "inventory",
+        "receiving"
+      ],
+      "supervisor": 101
+    }
+  ],
+  "books": [
+    {
+      "isbn": "978-0-00-000001-1",
+      "title": "The River Path",
+      "genre": "Fiction",
+      "price": 19.99,
+      "in_stock": 12
+    },
+    {
+      "isbn": "978-0-00-000002-8",
+      "title": "Learning to Code",
+      "genre": "Technology",
+      "price": 44.5,
+      "in_stock": 3
+    },
+    {
+      "isbn": "978-0-00-000003-5",
+      "title": "Northern Gardens",
+      "genre": "Hobbies",
+      "price": 27.0,
+      "in_stock": 0
+    },
+    {
+      "isbn": "978-0-00-000004-2",
+      "title": "Midnight Signal",
+      "genre": "Fiction",
+      "price": 16.25,
+      "in_stock": 7
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+2026-10-10 14:00:00 INFO  Firewall service started
+2026-10-10 14:00:05 INFO  Rule set loaded: 42 rules
+2026-10-10 14:01:12 ERROR Rule 17 has invalid syntax
+
+2026-10-10 14:02:33 INFO  Allowed TCP 10.0.0.5 -> 10.0.0.1:22
+2026-10-10 14:03:47 WARN  Repeated login attempts from 203.0.113.8
+2026-10-10 14:04:02 error Lowercase level from legacy module
+2026-10-10 14:04:58 INFO  No ERRORS detected in last health check
+2026-10-10 14:05:20 ERROR Blocked connection from 198.51.100.23
+2026-10-10 14:06:41 INFO  Allowed UDP 10.0.0.7 -> 8.8.8.8:53
+2026-10-10 14:07:15 DEBUG Packet inspection queue length: 3
+2026-10-10 14:08:09 ERROR Log rotation failed: permission denied
+2026-10-10 14:09:33 INFO  Message contains the word TERROR in a filename: terror_report.txt
+2026-10-10 14:10:01 WARN  Certificate expires in 7 days
+
+2026-10-10 14:11:26 ERROR Port scan detected from 203.0.113.8
+2026-10-10 14:12:44 INFO  Blocked IP 203.0.113.8 for 24 hours
+2026-10-10 14:13:59 ERROR   Extra spaces after the level
+2026-10-10 14:15:10 INFO  Health check passed
+2026-10-10 14:16:00 INFO  Firewall service running normally
