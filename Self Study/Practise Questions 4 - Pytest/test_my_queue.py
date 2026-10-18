@@ -54,3 +54,6 @@ def test_empty_again_after_dequeuing_everything():
 
 #test_size_increase_after_enqueue()
 test_peek_returns_first_item()
+test_new_queue_is_empty()
+test_not_empty_after_enqueue()
+test_empty_again_after_dequeuing_everything()
