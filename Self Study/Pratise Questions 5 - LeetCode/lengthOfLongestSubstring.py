@@ -12,10 +12,9 @@ def lengthOfLongestSubstring(s):
         for chara in s :  # for each characters in s
             
             if chara in substring: # if character already exists in substring
-                substring = substring[substring.index(chara)+1::] 
+                substring = substring[substring.index(chara)+1::] #substring now starts after that first instance of the duplicate
 
-            
-            substring = substring + chara #if no duplicate, 
+            substring = substring + chara #if no duplicate, add the character to the substring
             maxSubstring = max(maxSubstring, len(substring))
                 
         
